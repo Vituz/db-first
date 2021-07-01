@@ -2,12 +2,12 @@
 
 ## (table) Cars:
 
-- id                                    BIGINT          PRIMARY KEY UNIQUE
-- marca                                 VARCHAR(20)     NOTNULL
-- modello                               VARCHAR(20)     NOTNULL
+- id                                    BIGINT          PRIMARY KEY UNIQUE INDEX
+- marca                                 VARCHAR(20)     NOTNULL INDEX
+- modello                               VARCHAR(20)     NOTNULL INDEX
 - versione                              VARCHAR(20)     NOTNULL
 - carrozzeria (city-car, berlina, ecc.) VARCHAR(20)     NULL     
-- motore                                VARCHAR(10)     NOTNULL           
+- motore                                VARCHAR(10)     NOTNULL INDEX          
 - cavalli                               VARCHAR(4)      NULL
 - cilindrata                            VARCHAR(10)     NOTNULL
 - anno di immatricolazione              YEAR            NOTNULL
